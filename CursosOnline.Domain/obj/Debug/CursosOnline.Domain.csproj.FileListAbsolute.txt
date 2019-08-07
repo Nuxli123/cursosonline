@@ -1,0 +1,5 @@
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\bin\Debug\CursosOnline.Domain.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\bin\Debug\CursosOnline.Domain.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.csprojResolveAssemblyReference.cache

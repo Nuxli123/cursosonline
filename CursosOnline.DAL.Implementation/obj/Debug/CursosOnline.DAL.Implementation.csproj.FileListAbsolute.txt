@@ -1,0 +1,16 @@
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.DAL.Implementation.dll.config
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.DAL.Implementation.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.DAL.Implementation.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.DAL.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.DataContext.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.Domain.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\EntityFramework.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.Domain.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.DataContext.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\CursosOnline.DAL.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\EntityFramework.xml
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\obj\Debug\CursosOnline.DAL.Implementation.csprojResolveAssemblyReference.cache
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\obj\Debug\CursosOnline.DAL.Implementation.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL.Implementation\obj\Debug\CursosOnline.DAL.Implementation.pdb

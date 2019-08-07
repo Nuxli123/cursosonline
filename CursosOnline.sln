@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosOnline.Domain", "CursosOnline.Domain\CursosOnline.Domain.csproj", "{09DDBBFF-58DE-4129-A4D9-A1489AD6B2DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosOnline.DataContext", "CursosOnline.DataContext\CursosOnline.DataContext.csproj", "{B18FE414-966A-46A2-9DA9-E0C6F9C2B51A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosOnline.DAL", "CursosOnline.DAL\CursosOnline.DAL.csproj", "{EAC698D1-B5F7-4521-8931-85D465B3F3CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosOnline.DAL.Implementation", "CursosOnline.DAL.Implementation\CursosOnline.DAL.Implementation.csproj", "{E6071A37-D4B1-4D6B-98FB-EC1D9B319A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosOnline.Business", "CursosOnline.Business\CursosOnline.Business.csproj", "{113496EA-3235-48EF-9F8B-B396A0DE6E0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosOnline.Services", "CursosOnline.Services\CursosOnline.Services.csproj", "{13EA455D-8413-467A-9AAD-4FFEFA1A0FF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursosOnline.Web", "CursosOnline.Web\CursosOnline.Web.csproj", "{B0B1E99B-B6BF-4D74-94F5-4CE97CC2E326}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09DDBBFF-58DE-4129-A4D9-A1489AD6B2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DDBBFF-58DE-4129-A4D9-A1489AD6B2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DDBBFF-58DE-4129-A4D9-A1489AD6B2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DDBBFF-58DE-4129-A4D9-A1489AD6B2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18FE414-966A-46A2-9DA9-E0C6F9C2B51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18FE414-966A-46A2-9DA9-E0C6F9C2B51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18FE414-966A-46A2-9DA9-E0C6F9C2B51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18FE414-966A-46A2-9DA9-E0C6F9C2B51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC698D1-B5F7-4521-8931-85D465B3F3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC698D1-B5F7-4521-8931-85D465B3F3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC698D1-B5F7-4521-8931-85D465B3F3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC698D1-B5F7-4521-8931-85D465B3F3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6071A37-D4B1-4D6B-98FB-EC1D9B319A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6071A37-D4B1-4D6B-98FB-EC1D9B319A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6071A37-D4B1-4D6B-98FB-EC1D9B319A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6071A37-D4B1-4D6B-98FB-EC1D9B319A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113496EA-3235-48EF-9F8B-B396A0DE6E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113496EA-3235-48EF-9F8B-B396A0DE6E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113496EA-3235-48EF-9F8B-B396A0DE6E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113496EA-3235-48EF-9F8B-B396A0DE6E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13EA455D-8413-467A-9AAD-4FFEFA1A0FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13EA455D-8413-467A-9AAD-4FFEFA1A0FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13EA455D-8413-467A-9AAD-4FFEFA1A0FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13EA455D-8413-467A-9AAD-4FFEFA1A0FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B1E99B-B6BF-4D74-94F5-4CE97CC2E326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B1E99B-B6BF-4D74-94F5-4CE97CC2E326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B1E99B-B6BF-4D74-94F5-4CE97CC2E326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B1E99B-B6BF-4D74-94F5-4CE97CC2E326}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

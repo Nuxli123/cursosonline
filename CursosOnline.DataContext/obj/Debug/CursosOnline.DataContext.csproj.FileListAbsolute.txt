@@ -1,0 +1,12 @@
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\CursosOnline.DataContext.dll.config
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\CursosOnline.DataContext.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\CursosOnline.DataContext.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\CursosOnline.Domain.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\EntityFramework.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\CursosOnline.Domain.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\EntityFramework.xml
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.csprojResolveAssemblyReference.cache
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.pdb
