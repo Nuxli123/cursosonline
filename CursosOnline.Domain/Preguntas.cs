@@ -13,6 +13,7 @@ namespace CursosOnline.Domain
 	[Table("Preguntas")]
 	public class Preguntas : Base.BaseObjectDomain
 	{
+
 		[Required]
 		[Key, Column(Order=0)]
 		public int Id { get; set; } //(int, not null)

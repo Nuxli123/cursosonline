@@ -2,7 +2,11 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <UseIISExpress>true</UseIISExpress>
+<<<<<<< HEAD
+    <NameOfLastUsedPublishProfile>cusos</NameOfLastUsedPublishProfile>
+=======
     <ProjectView>ShowAllFiles</ProjectView>
+>>>>>>> 6da3ca2730303b8bcc11301efe1b2c982c9fb44a
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

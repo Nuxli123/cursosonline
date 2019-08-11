@@ -1794,6 +1794,9 @@
     <Content Include="plugins\zoom.master\roxy.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+<<<<<<< HEAD
+    <None Include="Properties\PublishProfiles\cusos.pubxml" />
+=======
     <Content Include="plugins\fuentes\Museo-Sans\museosans-100-webfont.eot" />
     <Content Include="plugins\fuentes\Museo-Sans\museosans-100-webfont.ttf" />
     <Content Include="plugins\fuentes\Museo-Sans\museosans-100-webfont.woff" />
@@ -1917,6 +1920,7 @@
     <Content Include="plugins\zoom.master\LICENSE.md" />
     <Content Include="plugins\zoom.master\package.json" />
     <Content Include="plugins\zoom.master\readme.md" />
+>>>>>>> 6da3ca2730303b8bcc11301efe1b2c982c9fb44a
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
