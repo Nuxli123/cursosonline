@@ -7,9 +7,242 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+	<!-- iconos-->
+	<link href="~/plugins/iconos.awesome/css/all.css" rel="stylesheet" />
+	<link href="~/fonts/fuentes.css" rel="stylesheet" />
 </head>
+
+
+<style>
+
+	body {
+	padding-top:0px;
+	   font-family: 'source_sans_proregular';
+	}
+	.navbar {
+	border-radius:0px;
+	border:0px;
+	}
+	.navbar.navbar-inverse {
+	background:#0848AF;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+	color:#fff;
+	}
+	.btn{
+		border:1px solid #0D3082;
+		margin:10px;
+		padding:10px 15px;
+		border-radius:0px;
+		position:relative;
+		float:left;
+		font-size:16px;
+	}
+		.btn2{
+		border:1px solid #29ABE2;
+		margin:10px;
+		padding:10px 15px;
+		border-radius:0px;
+		background:#29ABE2;
+			position:relative;
+		float:left;
+			font-size:16px;
+	}
+
+			.btn2 > a {
+			padding-top:0px !important;
+			padding-bottom:0px !important;
+			color:#fff;
+			}
+
+					.btn2 > a:hover {
+			background:#29ABE2 !important;
+			}
+
+
+	.btn > a {
+		padding-top:0px !important;
+		padding-bottom:0px !important;
+				color:#0D3082;
+		}
+		.btn > a:hover {
+		background:#fff !important;
+		}
+
+	#btnBusqueda {
+		position: relative;
+		float: left;
+		background: #F2F2F2;
+		font-size: 17px;
+		border: 1px solid #E6E6E6;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 10px;
+		padding-left: 40px;
+		background-image: url('../../Img/icono-buscar.svg');
+		background-repeat:no-repeat;
+		background-position:10px center;
+		background-size:20px 20px;
+		margin: 10px 0px;
+		color: #999999;
+		width:100%;
+		max-width:100%;
+	}
+	#carrito {
+	position: relative;
+    float: left;
+    /* width: 50px; */
+    /* height: 50px; */
+    background: #F2F2F2;
+    border-radius: 360px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    border: 1px solid #E6E6E6;
+    padding: 11px 10px;
+    margin: 10px;
+    color: #999999;
+	}
+
+	.degradado {
+	background: rgba(41,170,226,1);
+background: -moz-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,170,226,1)), color-stop(100%, rgba(13,48,130,1)));
+background: -webkit-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
+background: -o-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
+background: -ms-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
+background: linear-gradient(to right, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', endColorstr='#0d3082', GradientType=1 );
+	}
+	.col {
+	position:relative; float:left;
+	}
+	.w100 {
+	width:100%;
+	}
+
+
+	#bigfooter {
+		padding-top:20px;
+	padding-bottom:20px;
+		background:#273244;
+	}
+
+	footer {
+	color:#ffF;
+	background:#273244;
+	border-top:1px solid #29ABE2;
+	border-bottom:10px solid #29ABE2;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.titulo_footer {
+	padding-bottom:10px;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+		border-bottom:1px solid #29ABE2;
+		font-size:14px;
+		text-transform:uppercase;
+	}
+
+
+
+	.color_blanco,.color_blanco:hover {
+	color:#fff;
+	}
+	.icono {
+	border:1px solid #fff;
+	border-radius:360px;
+	margin-right:5px;
+	    padding: 5px 7px;
+    font-size: 10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+
+	@@media (min-width:1000px) {
+	
+
+	.centrarVertical-md {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	}
+
+	}
+
+
+
+		@@media (min-width:767px) {
+	
+
+	.centrarVertical-sm {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	}
+
+	}
+
+
+
+
+	@@media (max-width:767px) {
+		.navbar-right {
+		float:right;
+		}
+		#carrito {
+		margin:15px;
+		}
+
+
+		.centrarVertical-xs {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	}
+
+</style>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+	<div class="degradado" style="position:relative; float:left; width:100%; height:10px; border:0px;">
+
+	</div>
+
+	<div style="padding:10px 0px;  background:#fff;" class="container-fluid col w100">
+		<div class="container" >
+			<div class="row centrarVertical-md ">
+
+				<div class="col col-xs-12 colsm-3 col-md-3 text-center">
+					<a href="#" class="col w100" style="margin:10px 0px;"> 
+						<img src="~/Img/logo.jpg" width="175" />
+					</a>
+					</div>
+
+					<div class="col col-xs-12 col-sm-6 col-md-6 hidden-xs">
+						<form action="/" method="post">
+							<input type="type" name="name" id="btnBusqueda" placeholder="Encuentra lo que estas buscando" />
+						</form>
+					</div>
+
+					<div class="col col-xs-12 col-sm-6 col-md-4">
+						<div id="carrito"><i class="fas fa-shopping-cart"></i></div>
+						@Html.Partial("_LoginPartial")
+					</div>
+
+				</div>
+		</div>
+	</div>
+    <div    class="col w100 navbar navbar-inverse <!--navbar-fixed-top-->">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,7 +250,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+              
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -25,17 +258,79 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+              
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+
+	<div style="margin-top:50px;" class="col w100">
+		<div class="container body-content">
+			@RenderBody()
+			<hr />
+
+		</div>
+
+
+		<div id="bigfooter">
+			<div class="container" >
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-4">
+						<p class="titulo_footer">Acasetra</p>
+
+						<p class="color_blanco"> Somos una empresa con presencia, dedicada a la asesoría y capacitación en temas relacionados con seguridad e higiene</p>
+							
+						<p><a class="color_blanco" hrfe="tel:2761003632"> <span class="icono"><i class="fas fa-phone-alt"></i></span> 2761003632</a> </p>
+						<p><a class="color_blanco" hrfe="mailto:acasetra@gmail.com"> <span class="icono"><i class="fas fa-envelope"></i></span> acasetra@gmail.com</a></p>
+						<img style="margin:10px; width:100px;" src="~/Img/openpay.png" />
+						
+
+					</div>
+
+
+
+					<div class="col-xs-12 col-sm-4 text-center">
+						<p class="titulo_footer">Cursos</p>
+
+
+						<p><a href="#" class="color_blanco"  >Curso 1</a></p>
+						<p><a href="#" class="color_blanco">Curso 2</a></p>
+						<p><a href="#" class="color_blanco">Curso 3</a></p>
+						<p><a href="#" class="color_blanco">Curso 4</a></p>
+						<p><a href="#" class="color_blanco">Curso 5</a></p>
+
+
+					</div>
+
+
+					<div class="col-xs-12 col-sm-4 text-center">
+						<p class="titulo_footer">Enlaces</p>
+
+
+						<p><a href="#" class="color_blanco">Contacto</a></p>
+						<p><a href="#" class="color_blanco">Preguntas Frecuentes</a></p>
+						<p><a href="#" class="color_blanco">Condiciones de pago</a></p>
+						<p><a href="#" class="color_blanco">Aviso de privacidad</a></p>
+						<p><a href="#" class="color_blanco">¿Quiénes somos?</a></p>
+
+
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Copyright Acasetra </p>
+		</footer>
+
+	</div>
+
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
