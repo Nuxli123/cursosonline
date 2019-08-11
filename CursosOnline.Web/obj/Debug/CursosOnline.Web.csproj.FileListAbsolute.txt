@@ -154,3 +154,5 @@ C:\laragon\www\cursos\cursosonline\CursosOnline.Web\bin\Microsoft.Owin.Security.
 C:\laragon\www\cursos\cursosonline\CursosOnline.Web\bin\CursosOnline.DataContext.pdb
 C:\laragon\www\cursos\cursosonline\CursosOnline.Web\bin\CursosOnline.Domain.dll
 C:\laragon\www\cursos\cursosonline\CursosOnline.Web\bin\CursosOnline.Domain.pdb
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Web\bin\CursosOnline.Domain.dll
+C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Web\bin\CursosOnline.Domain.pdb
