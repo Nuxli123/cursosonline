@@ -1,0 +1,370 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div class="col w100 text-center">
+
+
+
+
+	<div class="col w100 text-center">
+		<p class="titulos"> Conoce nuestros cursos  </p>
+	</div>
+
+
+
+</div>
+
+
+
+<style>
+
+.card.foto{ width:48%; float:lefT;}
+
+.cont_filtros{ position: relative; float:lefT; padding: 30px 0px; width:100%;}
+.titulo_filtro{ color:#333; font-size: 30px; cursor: pointer; text-align: left; padding: 0px 15px;     font-family: 'source_sans_prosemibold';}
+
+
+
+/* estilos de input check  */
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: normal;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border:1px solid #ccc;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container-check:hover input ~ .checkmark {
+    background-color: #617482;
+
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container-check input:checked ~ .checkmark {
+    background-color: #617482;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container-check input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.cont_filtros{ display: inline-block; float:none; width:100%; max-width:77%; text-align:left;}
+.linea_gris{ border:0px; height:1px; background:#ccc; margin:0px 0px; width:100%; position:relative; floaT:lefT;}
+
+.filtros{ position: relative; float:lefT; width:20%; text-align: center;}
+
+#productos{ float:right; width:80%; background:#f7f8fa; padding:0px 50px;}
+#contPaginacion{ float:right; width:80%; background:#f7f8fa; padding:50px 50px;}
+
+@@media (max-width:767px){
+	.filtros{margin-left: -20%; display:none;}
+	#productos{width:100%; padding: 0px 15px;}
+	#contPaginacion{width:100%;}
+	.card.foto{ width:100%;}
+}
+
+</style>
+
+
+<div class="col w100">
+
+
+	<div class="filtros">
+
+		<hr class="linea_gris">
+		<div class="cont_filtros">
+
+			<p class="titulo_filtro" onclick="slideUp('#filtro1','this')"> <i class="fas fa-chevron-up"></i> &nbsp;  Categorías</p>
+			<div id="filtro1">
+				<form action="/action_page.php">
+
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Cursos Presenciales
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Cursos Online
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+
+
+				</form>
+			</div>
+
+		</div>
+
+
+
+
+		<hr class="linea_gris">
+
+		<div class="cont_filtros">
+			<p class="titulo_filtro" onclick="slideUp('#filtro2','this')"> <i class="fas fa-chevron-up"></i> &nbsp;  Raking</p>
+
+			<div id="filtro2">
+				<form action="/action_page.php">
+
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Menor a Mayor
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Mayor a Menor
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+
+
+				</form>
+			</div>
+
+		</div>
+
+
+
+		<hr class="linea_gris">
+
+		<div class="cont_filtros">
+			<p class="titulo_filtro" onclick="slideUp('#filtro3','this')"> <i class="fas fa-chevron-up"></i> &nbsp;  Alfabéticamente</p>
+
+			<div id="filtro3">
+				<form action="/action_page.php">
+
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							A-Z
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Z-A
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+
+
+				</form>
+			</div>
+
+		</div>
+
+
+
+		<hr class="linea_gris">
+
+		<div class="cont_filtros">
+			<p class="titulo_filtro" onclick="slideUp('#filtro4','this')"> <i class="fas fa-chevron-up"></i> &nbsp;  Precio</p>
+
+			<div id="filtro4">
+				<form action="/action_page.php">
+
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Menor a Mayor
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Mayor a Menor
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+
+
+				</form>
+			</div>
+
+		</div>
+
+
+		<hr class="linea_gris">
+
+		<div class="cont_filtros">
+			<p class="titulo_filtro" onclick="slideUp('#filtro5','this')"> <i class="fas fa-chevron-up"></i> &nbsp;  Recientes</p>
+
+			<div id="filtro5">
+				<form action="/action_page.php">
+
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Más Recientes
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							Mayor Antiguedad
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+
+
+				</form>
+			</div>
+
+		</div>
+
+
+		<hr class="linea_gris">
+
+
+		<div class="cont_filtros">
+			<p class="titulo_filtro" onclick="slideUp('#filtro6','this')"> <i class="fas fa-chevron-up"></i> &nbsp;  Horas</p>
+
+			<div id="filtro6">
+				<form action="/action_page.php">
+
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							-35 HORAS
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-xs-12 col-sm-12" style="margin:10px 0px;">
+						<label style=" font-size:17px;" class="container-check">
+							+35 HORAS
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+
+
+				</form>
+			</div>
+
+		</div>
+
+
+
+
+
+
+	</div>
+
+
+
+	<div id="productos"></div>
+
+
+
+
+
+
+	<div id="contPaginacion">
+		<div id="Paginas" style=" display:inline-block; margin:10px 0px;" class="col-xs-12 col-sm-12 text-center"></div>
+
+
+		<div class="col w100 text-center centrarVertical-md centrarVertical-sm centrarVertical-xs">
+
+			<p aria-hidden="true">
+				<button style="background: transparent;" id="flechaAnterior" class="btn " disabled="">
+					<span class="icon__fallback-text">Pagina anterior</span>
+				</button>
+			</p>
+
+
+			<p>
+				<button style="background: transparent;" id="flechaSiguiente" class="btn " disabled="">
+					<span class="icon__fallback-text">Siguiente página</span>
+				</button>
+			</p>
+
+		</div>
+
+
+	</div>
+
+
+</div>
+
+

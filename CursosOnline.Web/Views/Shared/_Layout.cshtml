@@ -10,280 +10,100 @@
 	<!-- iconos-->
 	<link href="~/plugins/iconos.awesome/css/all.css" rel="stylesheet" />
 	<link href="~/fonts/fuentes.css" rel="stylesheet" />
+
+
+	<link href="~/plugins/slider.slick/slick-theme.css" rel="stylesheet" />
+	<link href="~/plugins/slider.slick/slick.css" rel="stylesheet" />
+
+	<link href="~/Content/estilos.css" rel="stylesheet" />
+
+
 </head>
 
 
-<style>
 
-	body {
-	padding-top:0px;
-	   font-family: 'source_sans_proregular';
-	}
-	.navbar {
-	border-radius:0px;
-	border:0px;
-	}
-	.navbar.navbar-inverse {
-	background:#0848AF;
-	}
-	.navbar-inverse .navbar-nav > li > a {
-	color:#fff;
-	}
-	.btn{
-		border:1px solid #0D3082;
-		margin:10px;
-		padding:10px 15px;
-		border-radius:0px;
-		position:relative;
-		float:left;
-		font-size:16px;
-	}
-		.btn2{
-		border:1px solid #29ABE2;
-		margin:10px;
-		padding:10px 15px;
-		border-radius:0px;
-		background:#29ABE2;
-			position:relative;
-		float:left;
-			font-size:16px;
-	}
-
-			.btn2 > a {
-			padding-top:0px !important;
-			padding-bottom:0px !important;
-			color:#fff;
-			}
-
-					.btn2 > a:hover {
-			background:#29ABE2 !important;
-			}
-
-
-	.btn > a {
-		padding-top:0px !important;
-		padding-bottom:0px !important;
-				color:#0D3082;
-		}
-		.btn > a:hover {
-		background:#fff !important;
-		}
-
-	#btnBusqueda {
-		position: relative;
-		float: left;
-		background: #F2F2F2;
-		font-size: 17px;
-		border: 1px solid #E6E6E6;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-right: 10px;
-		padding-left: 40px;
-		background-image: url('../../Img/icono-buscar.svg');
-		background-repeat:no-repeat;
-		background-position:10px center;
-		background-size:20px 20px;
-		margin: 10px 0px;
-		color: #999999;
-		width:100%;
-		max-width:100%;
-	}
-	#carrito {
-	position: relative;
-    float: left;
-    /* width: 50px; */
-    /* height: 50px; */
-    background: #F2F2F2;
-    border-radius: 360px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    border: 1px solid #E6E6E6;
-    padding: 11px 10px;
-    margin: 10px;
-    color: #999999;
-	}
-
-	.degradado {
-	background: rgba(41,170,226,1);
-background: -moz-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,170,226,1)), color-stop(100%, rgba(13,48,130,1)));
-background: -webkit-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
-background: -o-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
-background: -ms-linear-gradient(left, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
-background: linear-gradient(to right, rgba(41,170,226,1) 0%, rgba(13,48,130,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', endColorstr='#0d3082', GradientType=1 );
-	}
-	.col {
-	position:relative; float:left;
-	}
-	.w100 {
-	width:100%;
-	}
-
-
-	#bigfooter {
-		padding-top:20px;
-	padding-bottom:20px;
-		background:#273244;
-	}
-
-	footer {
-	color:#ffF;
-	background:#273244;
-	border-top:1px solid #29ABE2;
-	border-bottom:10px solid #29ABE2;
-	text-align:center;
-	padding-top:20px;
-	padding-bottom:20px;
-	}
-
-	.titulo_footer {
-	padding-bottom:10px;
-	font-weight:bold;
-	text-align:center;
-	color:#fff;
-		border-bottom:1px solid #29ABE2;
-		font-size:14px;
-		text-transform:uppercase;
-	}
-
-
-
-	.color_blanco,.color_blanco:hover {
-	color:#fff;
-	}
-	.icono {
-	border:1px solid #fff;
-	border-radius:360px;
-	margin-right:5px;
-	    padding: 5px 7px;
-    font-size: 10px;
-	margin-top:10px;
-	margin-bottom:10px;
-	}
-
-	@@media (min-width:1000px) {
-	
-
-	.centrarVertical-md {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-
-	}
-
-	}
-
-
-
-		@@media (min-width:767px) {
-	
-
-	.centrarVertical-sm {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-
-	}
-
-	}
-
-
-
-
-	@@media (max-width:767px) {
-		.navbar-right {
-		float:right;
-		}
-		#carrito {
-		margin:15px;
-		}
-
-
-		.centrarVertical-xs {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-	}
-
-</style>
 <body>
+
 
 	<div class="degradado" style="position:relative; float:left; width:100%; height:10px; border:0px;">
 
 	</div>
 
 	<div style="padding:10px 0px;  background:#fff;" class="container-fluid col w100">
-		<div class="container" >
+		<div class="container">
 			<div class="row centrarVertical-md ">
 
 				<div class="col col-xs-12 colsm-3 col-md-3 text-center">
-					<a href="#" class="col w100" style="margin:10px 0px;"> 
+					<a href="#" class="col w100" style="margin:10px 0px;">
 						<img src="~/Img/logo.jpg" width="175" />
 					</a>
-					</div>
+				</div>
 
-					<div class="col col-xs-12 col-sm-6 col-md-6 hidden-xs">
-						<form action="/" method="post">
-							<input type="type" name="name" id="btnBusqueda" placeholder="Encuentra lo que estas buscando" />
-						</form>
-					</div>
+				<div class="col col-xs-12 col-sm-6 col-md-6 hidden-xs">
+					<form action="/" method="post">
+						<input type="type" name="name" id="btnBusqueda" placeholder="Encuentra lo que estas buscando" />
+					</form>
+				</div>
 
-					<div class="col col-xs-12 col-sm-6 col-md-4">
-						<div id="carrito"><i class="fas fa-shopping-cart"></i></div>
-						@Html.Partial("_LoginPartial")
-					</div>
+				<div class="col col-xs-12 col-sm-6 col-md-4">
+					<div id="carrito"><i class="fas fa-shopping-cart"></i></div>
+
+					@Html.Partial("_LoginPartial")
+					
 
 				</div>
+
+			</div>
 		</div>
 	</div>
-    <div    class="col w100 navbar navbar-inverse <!--navbar-fixed-top-->">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-              
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-              
-            </div>
-        </div>
-    </div>
 
-	<div style="margin-top:50px;" class="col w100">
-		<div class="container body-content">
-			@RenderBody()
-			<hr />
 
+
+	<div class="col w100 navbar navbar-inverse <!--navbar-fixed-top-->">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>@Html.ActionLink("Home", "Index", "Home")</li>
+					<li>@Html.ActionLink("About", "About", "Home")</li>
+					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+				</ul>
+
+			</div>
 		</div>
+	</div>
 
 
-		<div id="bigfooter">
-			<div class="container" >
+
+
+
+
+
+			@RenderBody()
+	
+
+
+
+		<div id="bigfooter" class="col w100">
+			<div class="container">
 				<div class="row">
 
 					<div class="col-xs-12 col-sm-4">
 						<p class="titulo_footer">Acasetra</p>
 
 						<p class="color_blanco"> Somos una empresa con presencia, dedicada a la asesoría y capacitación en temas relacionados con seguridad e higiene</p>
-							
-						<p><a class="color_blanco" hrfe="tel:2761003632"> <span class="icono"><i class="fas fa-phone-alt"></i></span> 2761003632</a> </p>
-						<p><a class="color_blanco" hrfe="mailto:acasetra@gmail.com"> <span class="icono"><i class="fas fa-envelope"></i></span> acasetra@gmail.com</a></p>
+
+						<p style="margin:20px 0px;"><a class="color_blanco" hrfe="tel:2761003632"> <span class="icono"><i class="fas fa-phone-alt"></i></span> 2761003632</a> </p>
+						<p style="margin:20px 0px;"><a class="color_blanco" hrfe="mailto:acasetra@gmail.com"> <span class="icono"><i class="fas fa-envelope"></i></span> acasetra@gmail.com</a></p>
 						<img style="margin:10px; width:100px;" src="~/Img/openpay.png" />
-						
+
 
 					</div>
 
@@ -293,7 +113,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', end
 						<p class="titulo_footer">Cursos</p>
 
 
-						<p><a href="#" class="color_blanco"  >Curso 1</a></p>
+						<p><a href="#" class="color_blanco">Curso 1</a></p>
 						<p><a href="#" class="color_blanco">Curso 2</a></p>
 						<p><a href="#" class="color_blanco">Curso 3</a></p>
 						<p><a href="#" class="color_blanco">Curso 4</a></p>
@@ -324,6 +144,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', end
 			</div>
 		</div>
 
+
 		<footer>
 			<p>&copy; @DateTime.Now.Year - Copyright Acasetra </p>
 		</footer>
@@ -335,5 +156,209 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', end
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+	<script src="~/plugins/slider.slick/slick.min.js"></script>
+
+
+	<script type="text/javascript">
+
+    $(document).ready(function(){
+      $('.cursos').slick({
+		  dots:false,
+        slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		arrows:true,
+		responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+      }
+    },
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+
+	]
+	   });
+
+
+$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
+$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
+    });
+
+
+
+$( window ).resize(function() {
+	$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
+$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
+    });
+
+
+
+
+
+
+////////////////////////////////funciones para la view de cursos////////////////////////////////////////////////////////////////////////
+
+
+
+
+$(document).ready(function () {
+	$('.cursos').slick({
+		dots: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		arrows: true,
+		responsive: [
+    {
+    	breakpoint: 767,
+    	settings: {
+    		slidesToShow: 1,
+    		slidesToScroll: 1,
+
+    	}
+    },
+    {
+    	breakpoint: 1300,
+    	settings: {
+    		slidesToShow: 2,
+    		slidesToScroll: 2
+    	}
+    }
+
+		]
+	});
+
+
+	$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
+	$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
+
+
+
+
+
+
+	var Content = "";
+	var NoPaginas = "";
+
+	var i;
+	var j;
+
+	var a = 0;
+
+
+
+	for (i = 1; i < 13; i++) {
+
+		if (i == 1) {
+			Content += '<div id="fila' + i + '" class="col-xs-12 col-sm-12 fila" >';
+			NoPaginas += '<p id="numero' + i + '" class="numero_paginacion"  style=" margin:0 10px; display: inline-block; color:#0D3082; font-weight:bold; cursor:pointer; " onclick="cambioPagina(' + i + ')" >' + i + '</p>';
+
+		} else {
+			Content += '<div id="fila' + i + '" class="col-xs-12 col-sm-12 fila" style="display:none;" >';
+			NoPaginas += '<p  id="numero' + i + '" class="numero_paginacion" style=" margin:0 10px; display: inline-block; color:#0D3082; cursor:pointer; " onclick="cambioPagina(' + i + ')" >' + i + '</p>';
+		}
+
+
+
+		//a ++;
+
+		for (j = 1; j < 9; j++) {
+
+			a++;
+
+			Content += ' 	<div class=" card foto" style="background:url(../Img/foto.jpg); background-size:auto 100%; background-repeat:no-repeat; background-position:left center;" ><img src="img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt=""><div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;"><p class="nombre_curso">Nombre del curso 1</p><p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p><p class="col w100"><span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span><span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span></p><p class="descripcion_curso" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><p class="costos" ><span class="costo_anterior">$ 300 MXN</span>$ 200 MXN</p><p class="botones"><a href="#" class="btn_mas" > <span class="icono" ><i class="fas fa-plus"></i></span>	 Ver más</a><a href="#" class="btn_carrito" > <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a></p></div></div>';
+
+		}
+
+		Content += '</div>';
+
+
+	}
+
+	$('#productos').html(Content);
+
+	$('#Paginas').html(NoPaginas);
+
+	$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(2)');
+
+
+
+
+
+});
+
+
+
+$(window).resize(function () {
+	$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
+	$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
+});
+
+
+
+function cambioPagina(id) {
+
+	$('.fila').hide();
+
+	$('#fila' + id).fadeIn();
+
+	$('.numero_paginacion').css('font-weight', 'normal');
+
+	$('#numero' + id).css('font-weight', 'bold');
+
+	var siguiente = id + 1;
+	var anterior = id - 1;
+
+	if (id == 1) {
+
+		$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + siguiente + ')');
+		$('#flechaAnterior').attr({ 'disabled': 'disabled', 'onclick': '' });
+
+	} else if (id == 12) {
+
+		$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + anterior + ')');
+		$('#flechaSiguiente').attr({ 'disabled': 'disabled', 'onclick': '' });
+
+	} else {
+
+		$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + siguiente + ')');
+		$('#flechaAnterior').removeAttr('disabled').attr('onclick', 'cambioPagina(' + anterior + ')');
+
+	}
+
+
+
+}
+
+
+function slideUp(id, id2) {
+
+	if ($(id).is(':visible')) {
+
+		$(id).slideUp();
+		$(id2).empty();
+
+	} else {
+
+		$(id).slideDown();
+
+	}
+
+}
+	</script>
+
+
 </body>
 </html>

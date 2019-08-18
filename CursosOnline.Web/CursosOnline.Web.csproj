@@ -180,6 +180,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CursosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -194,10 +195,20 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\estilos.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fuentes.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Img\foto.jpg" />
+    <Content Include="Img\icono-buscar.svg" />
+    <Content Include="Img\imagen.jpg" />
+    <Content Include="Img\logo.jpg" />
+    <Content Include="Img\logos.jpg" />
+    <Content Include="Img\openpay.png" />
+    <Content Include="Img\portada.jpg" />
+    <Content Include="Img\portada_movil.jpg" />
     <Content Include="plugins\fuentes\Museo-Sans\fuentes.css" />
     <Content Include="plugins\fuentes\Source-Sans-Pro\fuentes.css" />
     <Content Include="plugins\iconos.awesome\css\all.css" />
@@ -1917,6 +1928,37 @@
     <Content Include="plugins\zoom.master\LICENSE.md" />
     <Content Include="plugins\zoom.master\package.json" />
     <Content Include="plugins\zoom.master\readme.md" />
+    <Content Include="fonts\sourcesanspro-black-webfont.ttf" />
+    <Content Include="fonts\sourcesanspro-black-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-black-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-blackit-webfont.ttf" />
+    <Content Include="fonts\sourcesanspro-blackit-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-blackit-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-bold-webfont.ttf" />
+    <Content Include="fonts\sourcesanspro-bold-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-bold-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-boldit-webfont.ttf" />
+    <Content Include="fonts\sourcesanspro-boldit-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-boldit-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-extralight-webfont.ttf" />
+    <Content Include="fonts\sourcesanspro-extralight-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-extralight-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-extralightit-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-extralightit-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-it-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-it-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-light-webfont.ttf" />
+    <Content Include="fonts\sourcesanspro-light-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-light-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-lightit-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-lightit-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-regular-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-regular-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-semibold-webfont.ttf" />
+    <Content Include="fonts\sourcesanspro-semibold-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-semibold-webfont.woff2" />
+    <Content Include="fonts\sourcesanspro-semiboldit-webfont.woff" />
+    <Content Include="fonts\sourcesanspro-semiboldit-webfont.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1963,6 +2005,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Cursos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
