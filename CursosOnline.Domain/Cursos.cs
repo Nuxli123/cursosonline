@@ -24,5 +24,10 @@ namespace CursosOnline.Domain
 		public string Color { get; set; } //(varchar(10), null)
 		[StringLength(150)]
 		public string Instructor { get; set; } //(varchar(150), null)
+        public string ImagenPortada { get; set; }
+        public string Descripcion { get; set; }
+        public decimal Duracion { get; set; }
+        public decimal Precio { get; set; }
+
 	}
 }

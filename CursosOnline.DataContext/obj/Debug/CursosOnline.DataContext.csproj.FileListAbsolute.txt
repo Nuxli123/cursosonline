@@ -10,3 +10,15 @@ C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\bin\
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.csprojResolveAssemblyReference.cache
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.dll
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\CursosOnline.DataContext.dll.config
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\CursosOnline.DataContext.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\CursosOnline.DataContext.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\CursosOnline.Domain.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\EntityFramework.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\CursosOnline.Domain.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\EntityFramework.xml
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.csprojResolveAssemblyReference.cache
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DataContext\obj\Debug\CursosOnline.DataContext.pdb

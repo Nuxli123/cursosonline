@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CursosOnline.Business;
+using CursosOnline.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +12,14 @@ namespace CursosOnline.Web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+
+            List<Cursos> modelCuros = new List<Cursos>();
+
+
+            modelCuros = new CursosBo().dao.SelectAll();
+
+
+            return View(modelCuros);
         }
 
         public ActionResult About()
@@ -26,5 +35,7 @@ namespace CursosOnline.Web.Controllers
 
             return View();
         }
+
+
     }
 }

@@ -1,4 +1,7 @@
-﻿@{
+﻿ @model List<CursosOnline.Domain.Cursos>
+
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -73,9 +76,42 @@
 
 			<div class="cursos">
 
+                @foreach (var item in Model)
+                {
+
+				<div class="card foto" style="background:url(../Img/curso1.jpg);
+					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
+
+					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
+
+					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
+						<p class="nombre_curso">@item.Nombre</p>
+						<p class="profesor_curso"> Profesor: @item.Instructor</p>
+						<p class="col w100">
+							@*<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>*@
+							<span class="tiempo_curso"> <i class="far fa-clock"></i> @item.Duracion</span>
+						</p>
+
+						<p class="descripcion_curso">
+							@item.Descripcion
+						</p>
+						<p class="costos">
+							@*<span class="costo_anterior">$ 300 MXN</span>*@
+							$ @item.Precio MXN
+						</p>
+
+						<p class="botones">
+							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
+							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Comprar</a>
+						</p>
+					</div>
+
+				</div>
+
+                }
 
 
-				<div class="card foto" style="background:url(../Img/foto.jpg);
+				@*<div class="card foto" style="background:url(../Img/foto.jpg);
 					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
 
 					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
@@ -176,40 +212,6 @@
 
 
 
-
-				<div class="card foto" style="background:url(../Img/foto.jpg);
-					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
-
-					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
-
-					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
-						<p class="nombre_curso">Nombre del curso 1</p>
-						<p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
-						<p class="col w100">
-							<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
-							<span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
-						</p>
-
-						<p class="descripcion_curso">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						</p>
-						<p class="costos">
-							<span class="costo_anterior">$ 300 MXN</span>
-							$ 200 MXN
-						</p>
-
-						<p class="botones">
-							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
-							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
-						</p>
-					</div>
-
-				</div>
-
-
-
 				<div class="card foto" style="background:url(../Img/foto.jpg);
 					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
 
@@ -271,7 +273,7 @@
 						</p>
 					</div>
 
-				</div>
+				</div>*@
 
 
 

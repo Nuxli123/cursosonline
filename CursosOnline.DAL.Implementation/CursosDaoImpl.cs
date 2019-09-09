@@ -24,14 +24,14 @@ namespace CursosOnline.DAL.Implementation
 
 		public Cursos Update(Cursos entity)
 		{
-			object[] parameters = new object[] { entity.Id, entity.Nombre, entity.Icono, entity.Color, entity.Instructor };
-			return Context.Database.SqlQuery<Cursos>("dbo.usp_CursosUpdate @Id={0}, @Nombre={1}, @Icono={2}, @Color={3}, @Instructor={4}", parameters).FirstOrDefault();
+			object[] parameters = new object[] { entity.Id, entity.Nombre, entity.Icono, entity.Color, entity.Instructor,entity.ImagenPortada,entity.Descripcion,entity.Duracion,entity.Precio };
+			return Context.Database.SqlQuery<Cursos>("dbo.usp_CursosUpdate @Id={0}, @Nombre={1}, @Icono={2}, @Color={3}, @Instructor={4},@ImagenPortada={5},@Descripcion={6},@Duracion={7},@Precio={8}", parameters).FirstOrDefault();
 		}
 
 		public Cursos Insert(Cursos entity)
 		{
-			object[] parameters = new object[] { entity.Nombre, entity.Icono, entity.Color, entity.Instructor };
-			return Context.Database.SqlQuery<Cursos>("dbo.usp_CursosInsert @Nombre={0}, @Icono={1}, @Color={2}, @Instructor={3}", parameters).FirstOrDefault();
+			object[] parameters = new object[] { entity.Nombre, entity.Icono, entity.Color, entity.Instructor, entity.ImagenPortada, entity.Descripcion, entity.Duracion, entity.Precio };
+			return Context.Database.SqlQuery<Cursos>("dbo.usp_CursosInsert @Nombre={0}, @Icono={1}, @Color={2}, @Instructor={3},@ImagenPortada={4},@Descripcion={5},@Duracion{6},@Precio={7}", parameters).FirstOrDefault();
 		}
 
 		public bool Delete(Cursos entity)

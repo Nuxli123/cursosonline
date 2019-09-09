@@ -201,6 +201,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Img\curso1.jpg" />
     <Content Include="Img\foto.jpg" />
     <Content Include="Img\icono-buscar.svg" />
     <Content Include="Img\imagen.jpg" />

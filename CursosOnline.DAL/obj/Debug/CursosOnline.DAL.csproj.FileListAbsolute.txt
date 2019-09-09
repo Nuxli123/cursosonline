@@ -5,3 +5,10 @@ C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL\bin\Debug\Cu
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL\obj\Debug\CursosOnline.DAL.csprojResolveAssemblyReference.cache
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL\obj\Debug\CursosOnline.DAL.dll
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.DAL\obj\Debug\CursosOnline.DAL.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.DAL\bin\Debug\CursosOnline.DAL.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DAL\bin\Debug\CursosOnline.DAL.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.DAL\bin\Debug\CursosOnline.Domain.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DAL\bin\Debug\CursosOnline.Domain.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.DAL\obj\Debug\CursosOnline.DAL.csprojResolveAssemblyReference.cache
+C:\CursosIndustrial\cursosonline\CursosOnline.DAL\obj\Debug\CursosOnline.DAL.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.DAL\obj\Debug\CursosOnline.DAL.pdb

@@ -2,3 +2,8 @@ C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\bin\Debug
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\bin\Debug\CursosOnline.Domain.pdb
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.dll
 C:\ProyectoIndustrialCursosOnline\CursosIndustrial\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.Domain\bin\Debug\CursosOnline.Domain.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.Domain\bin\Debug\CursosOnline.Domain.pdb
+C:\CursosIndustrial\cursosonline\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.csprojResolveAssemblyReference.cache
+C:\CursosIndustrial\cursosonline\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.dll
+C:\CursosIndustrial\cursosonline\CursosOnline.Domain\obj\Debug\CursosOnline.Domain.pdb
