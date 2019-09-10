@@ -85,9 +85,19 @@
 					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
 
 					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
-						<p class="nombre_curso">@item.Nombre</p>
+
+						@if (item.Nombre.Length > 27)
+						{
+							<a href="~/Views/Cursos/Index.cshtml" class="nombre_curso">@item.Nombre.Substring(0,27) ...</a>
+
+						}
+						else
+						{
+
+							<a href="~/Views/Cursos/Index.cshtml" class="nombre_curso">@item.Nombre <br /><br /></a>
+						}
 						<p class="profesor_curso"> Profesor: @item.Instructor</p>
-						<p class="col w100">
+						<p class="col w100" style="border-bottom: 3px solid #F2F2F2;  margin-bottom: 10px;   padding-bottom: 10px;" >
 							@*<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>*@
 							<span class="tiempo_curso"> <i class="far fa-clock"></i> @item.Duracion</span>
 						</p>

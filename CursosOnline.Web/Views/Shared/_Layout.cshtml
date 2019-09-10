@@ -24,70 +24,75 @@
 
 <body>
 
+	<div id="no-scroll" style="position:absolute; width:100%; height:auto;">
 
-	<div class="degradado" style="position:relative; float:left; width:100%; height:10px; border:0px;">
+		<div class="degradado" style="position:relative; float:left; width:100%; height:10px; border:0px;">
 
-	</div>
+		</div>
 
-	<div style="padding:10px 0px;  background:#fff;" class="container-fluid col w100">
-		<div class="container">
-			<div class="row centrarVertical-md ">
+		<div style="padding:10px 0px;  background:#fff;" class="container-fluid col w100">
+			<div class="container">
+				<div class="row centrarVertical-md ">
 
-				<div class="col col-xs-12 colsm-3 col-md-3 text-center">
-					<a href="#" class="col w100" style="margin:10px 0px;">
-						<img src="~/Img/logo.jpg" width="175" />
-					</a>
+					<div class="col col-xs-12 colsm-3 col-md-3 text-center">
+						<a href="#" class="col w100" style="margin:10px 0px;">
+							<img src="~/Img/logo.jpg" width="175" />
+						</a>
+					</div>
+
+					<div class="col col-xs-12 col-sm-6 col-md-6 hidden-xs">
+						<form action="/" method="post">
+							<input type="type" name="name" id="btnBusqueda" placeholder="Encuentra lo que estas buscando" />
+						</form>
+					</div>
+
+					<div class="col col-xs-12 col-sm-6 col-md-4 text_center_movil">
+						<!--<div id="carrito"><i class="fas fa-shopping-cart"></i></div>-->
+
+						@Html.Partial("_LoginPartial")
+
+
+					</div>
+
 				</div>
-
-				<div class="col col-xs-12 col-sm-6 col-md-6 hidden-xs">
-					<form action="/" method="post">
-						<input type="type" name="name" id="btnBusqueda" placeholder="Encuentra lo que estas buscando" />
-					</form>
-				</div>
-
-				<div class="col col-xs-12 col-sm-6 col-md-4">
-					<div id="carrito"><i class="fas fa-shopping-cart"></i></div>
-
-					@Html.Partial("_LoginPartial")
-					
-
-				</div>
-
 			</div>
 		</div>
-	</div>
 
 
 
-	<div class="col w100 navbar navbar-inverse <!--navbar-fixed-top-->">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li>@Html.ActionLink("Home", "Index", "Home")</li>
-					<li>@Html.ActionLink("About", "About", "Home")</li>
-					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-				</ul>
 
+
+		<div class="col w100 navbar navbar-inverse <!--navbar-fixed-top-->">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+						<li>@Html.ActionLink("Nosotros", "About", "Home")</li>
+						<li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+						<li>@Html.ActionLink("Cursos", "Index", "Cursos")</li>
+						<li>@Html.ActionLink("Pago", "Index", "Pago")</li>
+					</ul>
+
+				</div>
 			</div>
 		</div>
-	</div>
 
 
 
 
+		@RenderBody()
 
 
 
-			@RenderBody()
-	
 
 
 
@@ -109,7 +114,7 @@
 
 
 
-					<div class="col-xs-12 col-sm-4 text-center">
+					<div class="col-xs-12 col-sm-4 text-center hidden-xs">
 						<p class="titulo_footer">Cursos</p>
 
 
@@ -123,7 +128,7 @@
 					</div>
 
 
-					<div class="col-xs-12 col-sm-4 text-center">
+					<div class="col-xs-12 col-sm-4 text-center hidden-xs">
 						<p class="titulo_footer">Enlaces</p>
 
 
@@ -152,211 +157,230 @@
 	</div>
 
 
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
 
 	<script src="~/plugins/slider.slick/slick.min.js"></script>
 
 
 	<script type="text/javascript">
 
-    $(document).ready(function(){
-      $('.cursos').slick({
-		  dots:false,
-        slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 2000,
-		arrows:true,
-		responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-
-      }
-    },
-    {
-      breakpoint: 1300,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    }
-
-	]
-	   });
+	
+		function reset() {
 
 
-$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
-$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
-    });
+			if ($(window).width() > 1430) {
+
+				$('.filtros').css({ 'margin-left': '0px', 'height': 'auto', 'top': 'auto' });
+				$('.sombra').fadeOut();
+				$('#no-scroll').css({ 'overflow': 'auto', 'height': 'auto' });
+
+			} else {
+
+				$('.filtros').css({ 'margin-left': '-100%', 'height': wh + 'px', 'top': '-' + tf + 'px' });
+				$('.sombra').fadeOut();
+				$('#no-scroll').css({ 'overflow': 'auto', 'height': 'auto' });
+			}
+
+		}
+
+		$(window).resize(function () {
+
+			reset();
+		});
 
 
 
-$( window ).resize(function() {
-	$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
-$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
-    });
+
+		$(window).resize(function () {
+			$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
+			$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
+		});
 
 
 
 
 
 
-////////////////////////////////funciones para la view de cursos////////////////////////////////////////////////////////////////////////
+
+
+
+		////////////////////////////////funciones para la view de cursos////////////////////////////////////////////////////////////////////////
 
 
 
 
-$(document).ready(function () {
-	$('.cursos').slick({
-		dots: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 2000,
-		arrows: true,
-		responsive: [
-    {
-    	breakpoint: 767,
-    	settings: {
-    		slidesToShow: 1,
-    		slidesToScroll: 1,
+		$(document).ready(function () {
+			$('.cursos').slick({
+				dots: false,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: false,
+				autoplaySpeed: 2000,
+				arrows: true,
+				responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
 
-    	}
-    },
-    {
-    	breakpoint: 1300,
-    	settings: {
-    		slidesToShow: 2,
-    		slidesToScroll: 2
-    	}
-    }
+				}
+			},
+			{
+				breakpoint: 1300,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			}
 
-		]
-	});
-
-
-	$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
-	$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
+				]
+			});
 
 
+			$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
+			$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
 
 
 
 
-	var Content = "";
-	var NoPaginas = "";
+			var Content = "";
+			var NoPaginas = "";
 
-	var i;
-	var j;
+			var i;
+			var j;
 
-	var a = 0;
+			var a = 0;
 
 
 
-	for (i = 1; i < 13; i++) {
+			for (i = 1; i < 13; i++) {
 
-		if (i == 1) {
-			Content += '<div id="fila' + i + '" class="col-xs-12 col-sm-12 fila" >';
-			NoPaginas += '<p id="numero' + i + '" class="numero_paginacion"  style=" margin:0 10px; display: inline-block; color:#0D3082; font-weight:bold; cursor:pointer; " onclick="cambioPagina(' + i + ')" >' + i + '</p>';
+				if (i == 1) {
+					Content += '<div id="fila' + i + '" class="col-xs-12 col-sm-12 fila" >';
+					NoPaginas += '<p id="numero' + i + '" class="numero_paginacion"  style=" margin:0 10px; display: inline-block; color:#0D3082; font-weight:bold; cursor:pointer; " onclick="cambioPagina(' + i + ')" >' + i + '</p>';
 
-		} else {
-			Content += '<div id="fila' + i + '" class="col-xs-12 col-sm-12 fila" style="display:none;" >';
-			NoPaginas += '<p  id="numero' + i + '" class="numero_paginacion" style=" margin:0 10px; display: inline-block; color:#0D3082; cursor:pointer; " onclick="cambioPagina(' + i + ')" >' + i + '</p>';
+				} else {
+					Content += '<div id="fila' + i + '" class="col-xs-12 col-sm-12 fila" style="display:none;" >';
+					NoPaginas += '<p  id="numero' + i + '" class="numero_paginacion" style=" margin:0 10px; display: inline-block; color:#0D3082; cursor:pointer; " onclick="cambioPagina(' + i + ')" >' + i + '</p>';
+				}
+
+
+
+				//a ++;
+
+				for (j = 1; j < 9; j++) {
+
+					a++;
+
+					Content += ' 	<div class=" card foto" style="background:url(../Img/foto.jpg); background-size:auto 100%; background-repeat:no-repeat; background-position:left center;" ><img src="img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt=""><div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;"><p class="nombre_curso">Nombre del curso 1</p><p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p><p class="col w100"><span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span><span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span></p><p class="descripcion_curso" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><p class="costos" ><span class="costo_anterior">$ 300 MXN</span>$ 200 MXN</p><p class="botones"><a href="#" class="btn_mas" > <span class="icono" ><i class="fas fa-plus"></i></span>	 Ver más</a><a href="#" class="btn_carrito" > <i class="fas fa-shopping-cart"></i> &nbsp; Comprar</a></p></div></div>';
+
+				}
+
+				Content += '</div>';
+
+
+			}
+
+			$('#productos').html(Content);
+
+			$('#Paginas').html(NoPaginas);
+
+			$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(2)');
+
+
+
+
+
+		});
+
+
+
+		$(window).resize(function () {
+			$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
+			$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
+		});
+
+
+
+		function cambioPagina(id) {
+
+			$('.fila').hide();
+
+			$('#fila' + id).fadeIn();
+
+			$('.numero_paginacion').css('font-weight', 'normal');
+
+			$('#numero' + id).css('font-weight', 'bold');
+
+			var siguiente = id + 1;
+			var anterior = id - 1;
+
+			if (id == 1) {
+
+				$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + siguiente + ')');
+				$('#flechaAnterior').attr({ 'disabled': 'disabled', 'onclick': '' });
+
+			} else if (id == 12) {
+
+				$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + anterior + ')');
+				$('#flechaSiguiente').attr({ 'disabled': 'disabled', 'onclick': '' });
+
+			} else {
+
+				$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + siguiente + ')');
+				$('#flechaAnterior').removeAttr('disabled').attr('onclick', 'cambioPagina(' + anterior + ')');
+
+			}
+
+
+
 		}
 
 
 
-		//a ++;
+		function slideUp(id, id2) {
 
-		for (j = 1; j < 9; j++) {
+			if ($(id).is(':visible')) {
 
-			a++;
+				$(id).slideUp();
+				$(id2).empty();
 
-			Content += ' 	<div class=" card foto" style="background:url(../Img/foto.jpg); background-size:auto 100%; background-repeat:no-repeat; background-position:left center;" ><img src="img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt=""><div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;"><p class="nombre_curso">Nombre del curso 1</p><p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p><p class="col w100"><span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span><span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span></p><p class="descripcion_curso" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><p class="costos" ><span class="costo_anterior">$ 300 MXN</span>$ 200 MXN</p><p class="botones"><a href="#" class="btn_mas" > <span class="icono" ><i class="fas fa-plus"></i></span>	 Ver más</a><a href="#" class="btn_carrito" > <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a></p></div></div>';
+			} else {
+
+				$(id).slideDown();
+
+			}
 
 		}
 
-		Content += '</div>';
-
-
-	}
-
-	$('#productos').html(Content);
-
-	$('#Paginas').html(NoPaginas);
-
-	$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(2)');
 
 
 
+		var p = $(".filtros");
+		var position = p.offset();
+
+		var wh = $(document).height();
+		var tf = position.top;
 
 
-});
-
-
-
-$(window).resize(function () {
-	$('.slick-prev').empty().append('<i class="fas fa-chevron-left"></i>');
-	$('.slick-next').empty().append('<i class="fas fa-chevron-right"></i>');
-});
-
-
-
-function cambioPagina(id) {
-
-	$('.fila').hide();
-
-	$('#fila' + id).fadeIn();
-
-	$('.numero_paginacion').css('font-weight', 'normal');
-
-	$('#numero' + id).css('font-weight', 'bold');
-
-	var siguiente = id + 1;
-	var anterior = id - 1;
-
-	if (id == 1) {
-
-		$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + siguiente + ')');
-		$('#flechaAnterior').attr({ 'disabled': 'disabled', 'onclick': '' });
-
-	} else if (id == 12) {
-
-		$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + anterior + ')');
-		$('#flechaSiguiente').attr({ 'disabled': 'disabled', 'onclick': '' });
-
-	} else {
-
-		$('#flechaSiguiente').removeAttr('disabled').attr('onclick', 'cambioPagina(' + siguiente + ')');
-		$('#flechaAnterior').removeAttr('disabled').attr('onclick', 'cambioPagina(' + anterior + ')');
-
-	}
+		function filtros() {
 
 
 
-}
+			$('.sombra').fadeIn().attr('onclick', 'cerrarFiltros()');
+			$('.filtros').css({ 'margin-left': '0px' });
+			$('#no-scroll').css({ 'overflow': 'hidden', 'height': '100%' });
+		}
+		function cerrarFiltros() {
+			$('.sombra').attr('onclick', '').fadeOut();
+			$('.filtros').css({ 'margin-left': '-100%' });
+			$('#no-scroll').css({ 'overflow': 'auto', 'height': 'auto' });
+		}
 
 
-function slideUp(id, id2) {
-
-	if ($(id).is(':visible')) {
-
-		$(id).slideUp();
-		$(id2).empty();
-
-	} else {
-
-		$(id).slideDown();
-
-	}
-
-}
 	</script>
 
 

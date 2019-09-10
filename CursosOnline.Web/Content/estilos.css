@@ -204,14 +204,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', end
 			content: "";
 		}
 
-		.nombre_curso{ font-size:22px;   font-family: 'source_sans_prosemibold'; color:#000;     margin-bottom: 7px;
-    line-height: 35px;}
-		.profesor_curso{ color:#4d4d4d; font-size:15px;    font-family: 'source_sans_proregular';} 
+		.nombre_curso{ font-size:25px;   font-family: 'source_sans_probold'; color:#000;     margin-bottom: 7px;
+    line-height: 25px;}
+		.profesor_curso{ color:#4d4d4d; font-size:15px; font-weight:600;    font-family: 'source_sans_proregular';} 
 		.clases_curso,.tiempo_curso{ position: relative; float: left; width:auto; font-size: 13px; color:#666666;}
 		.tiempo_curso{ margin-left:10px;}
 		.clases_curso > i,.tiempo_curso > i{ margin:0px 5px;}
 		.descripcion_curso{ position: relative; float: left; width:100%; color:#4d4d4d; font-size:14px;}
-		.costos{ margin-top:10px; font-family: 'source_sans_prosemibold'; position: relative; float: left; width:100%; border-top:2px solid #ccc; padding: 5px 0px; font-size: 27px; color:#000;}
+		.costos{ margin-top:10px; text-align:right; font-family: 'source_sans_prosemibold'; position: relative; float: left; width:100%; border-top:2px solid #ccc; padding: 5px 0px; font-size: 27px; color:#000;}
 .costo_anterior{ font-size:22px; color:#b3b3b3; text-decoration:line-through;}
 .btn_mas,.btn_mas:hover{    
 	background: #0D3082;
@@ -326,9 +326,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', end
 
 
 	@media (max-width:767px) {
-		.navbar-right {
-		float:right;
+
+		.text_center_movil {
+		text-align:center;
 		}
+		.nav.navbar-nav.navbar-right {
+		float:none; display:inline-block; width:100%;
+		}
+
+		.btn,.btn2 {
+		width:45%;
+		}
+
 		#carrito {
 		margin:15px;
 		}
