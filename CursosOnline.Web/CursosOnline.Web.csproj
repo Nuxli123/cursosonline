@@ -209,6 +209,12 @@
     <Content Include="Img\logo.jpg" />
     <Content Include="Img\logos.jpg" />
     <Content Include="Img\openpay.png" />
+    <Content Include="Img\openpay\cards1.png" />
+    <Content Include="Img\openpay\cards2.png" />
+    <Content Include="Img\openpay\cvv.png" />
+    <Content Include="Img\openpay\openpay.png" />
+    <Content Include="Img\openpay\radio_on.png" />
+    <Content Include="Img\openpay\security.png" />
     <Content Include="Img\portada.jpg" />
     <Content Include="Img\portada_movil.jpg" />
     <Content Include="plugins\fuentes\Museo-Sans\fuentes.css" />

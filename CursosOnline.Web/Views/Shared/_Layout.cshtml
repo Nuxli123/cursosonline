@@ -76,10 +76,10 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-						<li>@Html.ActionLink("Nosotros", "About", "Home")</li>
-						<li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+						@*<li>@Html.ActionLink("Nosotros", "About", "Home")</li>*@
+						@*<li>@Html.ActionLink("Contacto", "Contact", "Home")</li>*@
 						<li>@Html.ActionLink("Cursos", "Index", "Cursos")</li>
-						<li>@Html.ActionLink("Pago", "Index", "Pago")</li>
+						@*<li>@Html.ActionLink("Pago", "Index", "Pago")</li>*@
 					</ul>
 
 				</div>
@@ -363,7 +363,7 @@
 		var position = p.offset();
 
 		var wh = $(document).height();
-		var tf = position.top;
+		var tf = position.top();
 
 
 		function filtros() {

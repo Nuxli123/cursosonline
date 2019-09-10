@@ -1,4 +1,4 @@
-﻿ @model List<CursosOnline.Domain.Cursos>
+﻿@model List<CursosOnline.Domain.Cursos>
 
 
 @{
@@ -9,49 +9,49 @@
 
 
 <div class="col w100 ">
-	<img src="~/Img/portada.jpg" class="w100 hidden-xs" alt="">
-	<img src="~/Img/portada_movil.jpg" class="w100 visible-xs" alt="">
-	<div class="texto_slide">
-		<p class="titulo_slide">Aprende y especializate en <br>  Seguridad Industrial </p>
-		<p>
-			Conoce los diferentes cursos que <br>
-			tenemos y mantente actualizado
-		</p>
-	</div>
+    <img src="~/Img/portada.jpg" class="w100 hidden-xs" alt="">
+    <img src="~/Img/portada_movil.jpg" class="w100 visible-xs" alt="">
+    <div class="texto_slide">
+        <p class="titulo_slide">Aprende y especializate en <br>  Seguridad Industrial </p>
+        <p>
+            Conoce los diferentes cursos que <br>
+            tenemos y mantente actualizado
+        </p>
+    </div>
 </div>
 
 <div style="padding:20px 0px; margin-bottom: 50px;" class="col w100 degradado">
-	<div class="container">
-		<div class="row">
+    <div class="container">
+        <div class="row">
 
 
-			<div class=" text-center-movil col-xs-12 col-sm-4 centrarVertical-md">
-				<div class=" icono_home"> <i class="fas fa-book-open"></i> </div>
-				<div class="col-xs-12 col-sm-9">
-					<p class="texto_iconos">Cursos  online y presenciales</p>
-				</div>
-			</div>
+            <div class=" text-center-movil col-xs-12 col-sm-4 centrarVertical-md">
+                <div class=" icono_home"> <i class="fas fa-book-open"></i> </div>
+                <div class="col-xs-12 col-sm-9">
+                    <p class="texto_iconos">Cursos  online y presenciales</p>
+                </div>
+            </div>
 
 
-			<div class=" text-center-movil col-xs-12 col-sm-4 centrarVertical-md">
-				<div class=" icono_home"> <i class="fas fa-user"></i> </div>
-				<div class="col-xs-12 col-sm-9">
-					<p class="texto_iconos">Instructores profesionales y expertos </p>
-				</div>
-			</div>
+            <div class=" text-center-movil col-xs-12 col-sm-4 centrarVertical-md">
+                <div class=" icono_home"> <i class="fas fa-user"></i> </div>
+                <div class="col-xs-12 col-sm-9">
+                    <p class="texto_iconos">Instructores profesionales y expertos </p>
+                </div>
+            </div>
 
 
-			<div class=" text-center-movil col-xs-12 col-sm-4 centrarVertical-md">
-				<div class=" icono_home"> <i class="fas fa-history"></i> </div>
-				<div class="col-xs-12 col-sm-9">
-					<p class="texto_iconos">Lleva tu propio ritmo de aprendizaje</p>
-				</div>
-			</div>
+            <div class=" text-center-movil col-xs-12 col-sm-4 centrarVertical-md">
+                <div class=" icono_home"> <i class="fas fa-history"></i> </div>
+                <div class="col-xs-12 col-sm-9">
+                    <p class="texto_iconos">Lleva tu propio ritmo de aprendizaje</p>
+                </div>
+            </div>
 
 
 
-		</div>
-	</div>
+        </div>
+    </div>
 
 </div>
 
@@ -62,240 +62,240 @@
 
 
 
-	<div class="col w100 text-center">
-		<p class="titulos"> Conoce nuestros cursos  </p>
-	</div>
+    <div class="col w100 text-center">
+        <p class="titulos"> Conoce nuestros cursos  </p>
+    </div>
 
 
 
 
-	<div style="width:100%; max-width:90%; display:inline-block; ">
-		<div>
+    <div style="width:100%; max-width:90%; display:inline-block; ">
+        <div>
 
 
 
-			<div class="cursos">
+            <div class="cursos">
 
                 @foreach (var item in Model)
                 {
 
-				<div class="card foto" style="background:url(../Img/curso1.jpg);
+                    <div class="card foto" style="background:url(@item.ImagenPortada);
 					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
 
-					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
+                        <img src="@item.ImagenPortada" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
 
-					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
+                        <div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
 
-						@if (item.Nombre.Length > 27)
-						{
-							<a href="~/Views/Cursos/Index.cshtml" class="nombre_curso">@item.Nombre.Substring(0,27) ...</a>
+                            @if (item.Nombre.Length > 27)
+                            {
+                                <a href="~/Views/Cursos/Index.cshtml" class="nombre_curso">@item.Nombre.Substring(0, 27) ...<br /><br /></a>
 
-						}
-						else
-						{
+                            }
+                            else
+                            {
 
-							<a href="~/Views/Cursos/Index.cshtml" class="nombre_curso">@item.Nombre <br /><br /></a>
-						}
-						<p class="profesor_curso"> Profesor: @item.Instructor</p>
-						<p class="col w100" style="border-bottom: 3px solid #F2F2F2;  margin-bottom: 10px;   padding-bottom: 10px;" >
-							@*<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>*@
-							<span class="tiempo_curso"> <i class="far fa-clock"></i> @item.Duracion</span>
-						</p>
+                                <a href="~/Views/Cursos/Index.cshtml" class="nombre_curso">@item.Nombre <br /><br /></a>
+                            }
+                            <p class="profesor_curso"> Profesor: @item.Instructor</p>
+                            <p class="col w100" style="border-bottom: 3px solid #F2F2F2;  margin-bottom: 10px;   padding-bottom: 10px;">
+                                @*<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>*@
+                                <span class="tiempo_curso"> <i class="far fa-clock"></i> @item.Duracion</span>
+                            </p>
 
-						<p class="descripcion_curso">
-							@item.Descripcion
-						</p>
-						<p class="costos">
-							@*<span class="costo_anterior">$ 300 MXN</span>*@
-							$ @item.Precio MXN
-						</p>
+                            <p class="descripcion_curso">
+                                @item.Descripcion
+                            </p>
+                            <p class="costos">
+                                @*<span class="costo_anterior">$ 300 MXN</span>*@
+                                 @item.Precio.ToString("C") MXN
+                            </p>
 
-						<p class="botones">
-							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
-							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Comprar</a>
-						</p>
-					</div>
+                            <p class="botones">
+                                <a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
+                                <a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Comprar</a>
+                            </p>
+                        </div>
 
-				</div>
+                    </div>
 
                 }
 
 
-				@*<div class="card foto" style="background:url(../Img/foto.jpg);
-					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
+                @*<div class="card foto" style="background:url(../Img/foto.jpg);
+                        background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
 
-					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
+                        <img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
 
-					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
-						<p class="nombre_curso">Nombre del curso 1</p>
-						<p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
-						<p class="col w100">
-							<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
-							<span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
-						</p>
+                        <div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
+                            <p class="nombre_curso">Nombre del curso 1</p>
+                            <p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
+                            <p class="col w100">
+                                <span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
+                                <span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
+                            </p>
 
-						<p class="descripcion_curso">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						</p>
-						<p class="costos">
-							<span class="costo_anterior">$ 300 MXN</span>
-							$ 200 MXN
-						</p>
+                            <p class="descripcion_curso">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            </p>
+                            <p class="costos">
+                                <span class="costo_anterior">$ 300 MXN</span>
+                                $ 200 MXN
+                            </p>
 
-						<p class="botones">
-							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
-							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
-						</p>
-					</div>
+                            <p class="botones">
+                                <a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
+                                <a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
+                            </p>
+                        </div>
 
-				</div>
-
-
-
-
-				<div class="card foto" style="background:url(../Img/foto.jpg);
-					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
-
-					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
-
-					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
-						<p class="nombre_curso">Nombre del curso 1</p>
-						<p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
-						<p class="col w100">
-							<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
-							<span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
-						</p>
-
-						<p class="descripcion_curso">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						</p>
-						<p class="costos">
-							<span class="costo_anterior">$ 300 MXN</span>
-							$ 200 MXN
-						</p>
-
-						<p class="botones">
-							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
-							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
-						</p>
-					</div>
-
-				</div>
+                    </div>
 
 
 
 
-				<div class="card foto" style="background:url(../Img/foto.jpg);
-					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
+                    <div class="card foto" style="background:url(../Img/foto.jpg);
+                        background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
 
-					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
+                        <img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
 
-					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
-						<p class="nombre_curso">Nombre del curso 1</p>
-						<p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
-						<p class="col w100">
-							<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
-							<span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
-						</p>
+                        <div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
+                            <p class="nombre_curso">Nombre del curso 1</p>
+                            <p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
+                            <p class="col w100">
+                                <span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
+                                <span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
+                            </p>
 
-						<p class="descripcion_curso">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						</p>
-						<p class="costos">
-							<span class="costo_anterior">$ 300 MXN</span>
-							$ 200 MXN
-						</p>
+                            <p class="descripcion_curso">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            </p>
+                            <p class="costos">
+                                <span class="costo_anterior">$ 300 MXN</span>
+                                $ 200 MXN
+                            </p>
 
-						<p class="botones">
-							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
-							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
-						</p>
-					</div>
+                            <p class="botones">
+                                <a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
+                                <a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
+                            </p>
+                        </div>
 
-				</div>
-
-
-
-				<div class="card foto" style="background:url(../Img/foto.jpg);
-					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
-
-					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
-
-					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
-						<p class="nombre_curso">Nombre del curso 1</p>
-						<p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
-						<p class="col w100">
-							<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
-							<span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
-						</p>
-
-						<p class="descripcion_curso">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						</p>
-						<p class="costos">
-							<span class="costo_anterior">$ 300 MXN</span>
-							$ 200 MXN
-						</p>
-
-						<p class="botones">
-							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
-							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
-						</p>
-					</div>
-
-				</div>
+                    </div>
 
 
-				<div class="card foto" style="background:url(../Img/foto.jpg);
-					background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
-
-					<img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
-
-					<div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
-						<p class="nombre_curso">Nombre del curso 1</p>
-						<p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
-						<p class="col w100">
-							<span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
-							<span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
-						</p>
-
-						<p class="descripcion_curso">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						</p>
-						<p class="costos">
-							<span class="costo_anterior">$ 300 MXN</span>
-							$ 200 MXN
-						</p>
-
-						<p class="botones">
-							<a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
-							<a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
-						</p>
-					</div>
-
-				</div>*@
 
 
+                    <div class="card foto" style="background:url(../Img/foto.jpg);
+                        background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
+
+                        <img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
+
+                        <div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
+                            <p class="nombre_curso">Nombre del curso 1</p>
+                            <p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
+                            <p class="col w100">
+                                <span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
+                                <span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
+                            </p>
+
+                            <p class="descripcion_curso">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            </p>
+                            <p class="costos">
+                                <span class="costo_anterior">$ 300 MXN</span>
+                                $ 200 MXN
+                            </p>
+
+                            <p class="botones">
+                                <a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
+                                <a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="card foto" style="background:url(../Img/foto.jpg);
+                        background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
+
+                        <img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
+
+                        <div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
+                            <p class="nombre_curso">Nombre del curso 1</p>
+                            <p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
+                            <p class="col w100">
+                                <span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
+                                <span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
+                            </p>
+
+                            <p class="descripcion_curso">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            </p>
+                            <p class="costos">
+                                <span class="costo_anterior">$ 300 MXN</span>
+                                $ 200 MXN
+                            </p>
+
+                            <p class="botones">
+                                <a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
+                                <a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card foto" style="background:url(../Img/foto.jpg);
+                        background-size:auto 100%; background-repeat:no-repeat; background-position:center center;">
+
+                        <img src="~/Img/foto.jpg" class="w100 visible-xs visible-sm hidden-md hidden-lg" alt="">
+
+                        <div class="col-xs-12 col-sm-12 col-md-7 pull-right text-left" style="padding: 20px 15px; background: #fff;">
+                            <p class="nombre_curso">Nombre del curso 1</p>
+                            <p class="profesor_curso"> Profesor: Pedro Pérez Sanchez</p>
+                            <p class="col w100">
+                                <span class="clases_curso"> <i class="fas fa-play-circle"></i> 35 clases</span>
+                                <span class="tiempo_curso"> <i class="far fa-clock"></i> 28 horas</span>
+                            </p>
+
+                            <p class="descripcion_curso">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            </p>
+                            <p class="costos">
+                                <span class="costo_anterior">$ 300 MXN</span>
+                                $ 200 MXN
+                            </p>
+
+                            <p class="botones">
+                                <a href="#" class="btn_mas"> <span class="icono"><i class="fas fa-plus"></i></span>	 Ver más</a>
+                                <a href="#" class="btn_carrito"> <i class="fas fa-shopping-cart"></i> &nbsp; Agregar al carrito</a>
+                            </p>
+                        </div>
+
+                    </div>*@
 
 
 
 
 
 
-			</div>
 
-		</div>
-	</div>
+
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
@@ -303,138 +303,138 @@
 
 
 <div class="col w100 frase">
-	<div class="container">
-		<div class="row">
-			<p>18 Cursos Online y Presenciales <br> alcance de un click </p>
-			<a href="#" class="btn_frase">REGISTRATE</a>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <p>18 Cursos Online y Presenciales <br> alcance de un click </p>
+            <a href="#" class="btn_frase">REGISTRATE</a>
+        </div>
+    </div>
 </div>
 
 
 
 <div class="col w100 text-center" style="padding-top:50px; background:#f7f8fa;  ">
 
-	<div class="col w100 text-center">
-		<p class="titulos"> Testimonios  </p>
-	</div>
+    <div class="col w100 text-center">
+        <p class="titulos"> Testimonios  </p>
+    </div>
 
-	<div style="width:100%; max-width:90%; display:inline-block; ">
+    <div style="width:100%; max-width:90%; display:inline-block; ">
 
-		<div class="cursos">
-
-
-			<div class="card centrarVertical-md">
-				<div class="sin_foto_testigos">
-					P
-				</div>
-
-				<div class="texto_testigo">
-					<p class="nombre_curso">Pedro Pérez Sanchéz</p>
-					<p class="descripcion_curso">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					</p>
-				</div>
-
-			</div>
+        <div class="cursos">
 
 
-			<div class="card centrarVertical-md">
-				<div class="sin_foto_testigos">
-					P
-				</div>
+            <div class="card centrarVertical-md">
+                <div class="sin_foto_testigos">
+                    P
+                </div>
 
-				<div class="texto_testigo">
-					<p class="nombre_curso">Pedro Pérez Sanchéz</p>
-					<p class="descripcion_curso">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					</p>
-				</div>
+                <div class="texto_testigo">
+                    <p class="nombre_curso">Pedro Pérez Sanchéz</p>
+                    <p class="descripcion_curso">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                </div>
 
-			</div>
+            </div>
 
 
+            <div class="card centrarVertical-md">
+                <div class="sin_foto_testigos">
+                    P
+                </div>
 
-			<div class="card centrarVertical-md">
-				<div class="sin_foto_testigos">
-					P
-				</div>
+                <div class="texto_testigo">
+                    <p class="nombre_curso">Pedro Pérez Sanchéz</p>
+                    <p class="descripcion_curso">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                </div>
 
-				<div class="texto_testigo">
-					<p class="nombre_curso">Pedro Pérez Sanchéz</p>
-					<p class="descripcion_curso">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					</p>
-				</div>
-
-			</div>
+            </div>
 
 
 
-			<div class="card centrarVertical-md">
-				<div class="sin_foto_testigos">
-					P
-				</div>
+            <div class="card centrarVertical-md">
+                <div class="sin_foto_testigos">
+                    P
+                </div>
 
-				<div class="texto_testigo">
-					<p class="nombre_curso">Pedro Pérez Sanchéz</p>
-					<p class="descripcion_curso">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					</p>
-				</div>
+                <div class="texto_testigo">
+                    <p class="nombre_curso">Pedro Pérez Sanchéz</p>
+                    <p class="descripcion_curso">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                </div>
 
-			</div>
-
-
+            </div>
 
 
-			<div class="card centrarVertical-md">
-				<div class="sin_foto_testigos">
-					P
-				</div>
 
-				<div class="texto_testigo">
-					<p class="nombre_curso">Pedro Pérez Sanchéz</p>
-					<p class="descripcion_curso">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					</p>
-				</div>
+            <div class="card centrarVertical-md">
+                <div class="sin_foto_testigos">
+                    P
+                </div>
 
-			</div>
+                <div class="texto_testigo">
+                    <p class="nombre_curso">Pedro Pérez Sanchéz</p>
+                    <p class="descripcion_curso">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                </div>
 
-			<div class="card centrarVertical-md">
-				<div class="sin_foto_testigos">
-					P
-				</div>
-
-				<div class="texto_testigo">
-					<p class="nombre_curso">Pedro Pérez Sanchéz</p>
-					<p class="descripcion_curso">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					</p>
-				</div>
-
-			</div>
+            </div>
 
 
 
 
+            <div class="card centrarVertical-md">
+                <div class="sin_foto_testigos">
+                    P
+                </div>
 
-		</div>
+                <div class="texto_testigo">
+                    <p class="nombre_curso">Pedro Pérez Sanchéz</p>
+                    <p class="descripcion_curso">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                </div>
 
-	</div>
+            </div>
+
+            <div class="card centrarVertical-md">
+                <div class="sin_foto_testigos">
+                    P
+                </div>
+
+                <div class="texto_testigo">
+                    <p class="nombre_curso">Pedro Pérez Sanchéz</p>
+                    <p class="descripcion_curso">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -443,13 +443,13 @@
 
 <div class="col w100 text-center" style=" background:#f7f8fa; padding-bottom 50px; ">
 
-	<div class="col w100 text-center">
-		<p class="titulos"> Empresas que confian </p>
-	</div>
+    <div class="col w100 text-center">
+        <p class="titulos"> Empresas que confian </p>
+    </div>
 
-	<div style="width:100%; max-width:1100px; display:inline-block; ">
+    <div style="width:100%; max-width:1100px; display:inline-block; ">
 
-		<img src="~/Img/logos.jpg" class="w100" alt="">
-	
-	</div>
+        <img src="~/Img/logos.jpg" class="w100" alt="">
+
+    </div>
 </div>

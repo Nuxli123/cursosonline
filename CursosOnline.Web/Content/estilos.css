@@ -266,10 +266,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29aae2', end
 	border-bottom: 10px solid #29abe2;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background: url(../img/imagen.jpg);
+	background: url(../Img/imagen.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
 	background-position: center bottom;
 	margin-top: 50px;
 
